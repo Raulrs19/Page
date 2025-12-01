@@ -4,99 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmación de Pedido - VOURNE</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .confirmation-page {
-            padding: 140px 0 60px;
-            min-height: 80vh;
-            text-align: center;
-        }
-        .confirmation-card {
-            background: var(--background);
-            padding: 3rem;
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .confirmation-icon {
-            font-size: 4rem;
-            color: var(--success);
-            margin-bottom: 2rem;
-        }
-        .order-number {
-            background: var(--primary-light);
-            padding: 1rem;
-            border-radius: 4px;
-            margin: 2rem 0;
-            font-family: monospace;
-            font-size: 1.2rem;
-        }
-        .confirmation-actions {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin-top: 2rem;
-        }
-        @media (max-width: 768px) {
-            .confirmation-actions {
-                flex-direction: column;
-            }
-        }
-    </style>
-</head>
+    </head>
 <body>
-    <header class="site-header" id="header">
-        <nav class="nav container">
-            <div class="nav__center">
-                <a href="index.html" class="nav__brand">VOURNE</a>
-            </div>
-        </nav>
-    </header>
-
-    <main class="confirmation-page">
-        <div class="container">
-            <div class="confirmation-card">
-                <div class="confirmation-icon">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-                <h1>¡Pedido Confirmado!</h1>
-                <p>Gracias por tu compra en VOURNE. Tu pedido ha sido procesado correctamente.</p>
-                
-                <div class="order-number" id="orderNumber">
-                    Cargando número de pedido...
-                </div>
-                
-                <p>Hemos enviado un email de confirmación con todos los detalles.</p>
-                <p>Te mantendremos informado sobre el estado de tu envío.</p>
-                
-                <div class="confirmation-actions">
-                    <a href="index.html" class="btn btn--primary">Volver a la Tienda</a>
-                    <a href="contact.html" class="btn btn--secondary">Contactar Soporte</a>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="index.html" class="footer-logo">VOURNE</a>
-                    <p class="footer-description">
-                        Minimal Luxury - Ropa y accesorios diseñados con atención al detalle y materiales de calidad.
-                    </p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="footer-copyright">
-                    © 2025 VOURNE. ALL RIGHTS RESERVED.
-                </div>
-            </div>
-        </div>
-    </footer>
-
     <script>
         // Get order number from URL
         const urlParams = new URLSearchParams(window.location.search);
