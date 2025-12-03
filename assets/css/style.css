@@ -1,15 +1,53 @@
-/* ... código existente ... */
+/* VOURNE - Additional Styles & Overrides */
+
+/* --- CORRECCIÓN DE ERROR: VARIABLES CSS FALTANTES --- */
+:root {
+    /* Minimalist Light Palette */
+    --primary: #1A1A1A; /* Deep Black - Color principal */
+    --primary-dark: #1A1A1A;
+    --primary-light: #F7F7F7; /* Fondo claro */
+    
+    /* Text Colors */
+    --text-dark: #1A1A1A; /* Texto oscuro principal */
+    --text-light: #666666; /* Texto secundario/sutil */
+    
+    /* Background/Surface */
+    --background: #FFFFFF;
+    --border: #E0E0E0;
+    
+    /* Accent & Utility */
+    --accent: #8B4513; /* Un tono marrón/tierra rico para el acento de 'Minimal Luxury' */
+    --success: #28a745;
+    --error: #dc3545;
+    --warning: #ffc107;
+    
+    /* Effects */
+    --shadow: 0 4px 10px rgba(0,0,0,0.05);
+    --shadow-lg: 0 10px 30px rgba(0,0,0,0.15);
+    --transition: all 0.3s ease;
+}
+/* ----------------------------------------------------- */
+
+/* Import Main Styles */
+@import url('main.css');
+@import url('animations.css');
+
+/* Enhanced Typography */
+h1, h2, h3, h4, h5, h6 {
+/* ... (Contenido original) ... */
+
+/* Enhanced Button Styles */
+/* ... (Contenido original) ... */
 
 .btn--outline:hover {
     background: var(--accent);
     color: white;
 }
 
-/* [MODIFICACIÓN SOLICITADA] Cambiar el color del texto del botón primario al pasar el cursor (hover) para asegurar la visibilidad */
+/* [MODIFICACIÓN SOLICITADA ANTERIOR] Conservada */
 .btn--primary:hover {
     color: var(--text-dark); /* Color de texto oscuro para asegurar contraste y visibilidad al pasar el cursor */
 }
 
 /* Card Enhancements */
-.card {
-/* ... código restante ... */
+/* ... (Contenido original) ... */
