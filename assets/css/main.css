@@ -12,13 +12,13 @@ a:hover {
 }
 */
 
-/* Nuevo código para asegurar la visibilidad de las letras al pasar el cursor */
+/* Nuevo código para mejorar la visibilidad al hacer hover */
 a {
-    color: var(--text-light); /* Color base: Sutil (apenas visible) - Mantenido para el efecto minimalista */
+    color: var(--text-light); /* Color base: Gris Medio (#666666) */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--text-dark); /* CAMBIADO: Usar el color de texto más oscuro para máxima visibilidad al hacer hover */
+    color: var(--text-dark); /* MODIFICADO: Usar el color de texto más oscuro (Negro) para asegurar la visibilidad al pasar el cursor */
 }
