@@ -12,13 +12,13 @@ a:hover {
 }
 */
 
-/* Nuevo código para mejorar los estilos y colores de los enlaces */
+/* Nuevo código para asegurar la visibilidad de las letras al pasar el cursor */
 a {
-    color: var(--text-dark); /* Color base: Usar el color principal de texto oscuro para mayor contraste */
+    color: var(--text-light); /* Color base: Sutil (apenas visible) - Mantenido para el efecto minimalista */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--accent); /* Color hover: Usar el color de acento de la marca */
+    color: var(--text-dark); /* CAMBIADO: Usar el color de texto más oscuro para máxima visibilidad al hacer hover */
 }
