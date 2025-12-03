@@ -1,60 +1,15 @@
-/* VOURNE - Additional Styles & Overrides */
+/* ... código existente ... */
 
-/* Import Main Styles */
-@import url('main.css');
-@import url('animations.css');
-
-/* Enhanced Typography */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 500; /* Aumentado de 300 a 500 para más presencia */
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    letter-spacing: 0.05em; /* Añadido espaciado para estilo minimalista */
-    color: var(--text-dark); /* Asegurar color de texto oscuro */
+.btn--outline:hover {
+    background: var(--accent);
+    color: white;
 }
 
-h1 {
-    font-size: 3rem;
+/* [MODIFICACIÓN SOLICITADA] Cambiar el color del texto del botón primario al pasar el cursor (hover) para asegurar la visibilidad */
+.btn--primary:hover {
+    color: var(--text-dark); /* Color de texto oscuro para asegurar contraste y visibilidad al pasar el cursor */
 }
 
-h2 {
-    font-size: 2.5rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-h4 {
-    font-size: 1.5rem;
-}
-
-p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    color: var(--text-light); /* Cambiado a text-light para cuerpo de texto */
-}
-
-/* Enhanced Form Styles */
-.form-group {
-    margin-bottom: 1.5rem;
-}
-/* ... (el resto del archivo) ... */
-
-/* Text Utilities */
-.text-left { text-align: left; }
-.text-center { text-align: center; }
-.text-right { text-align: right; }
-
-.text-uppercase { text-transform: uppercase; }
-.text-lowercase { text-transform: lowercase; }
-.text-capitalize { text-transform: capitalize; }
-
-.text-bold { font-weight: bold; }
-.text-light { font-weight: 300; }
-
-.text-muted { color: #a0a0a0; } /* Definición de color más específica para texto silenciado */
-
-/* Visibility Utilities */
-.hidden { display: none; }
-/* ... (el resto del archivo) ... */
+/* Card Enhancements */
+.card {
+/* ... código restante ... */
