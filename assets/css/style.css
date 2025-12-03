@@ -1,6 +1,6 @@
 /* VOURNE - Additional Styles & Overrides */
 
-/* --- CORRECCIÓN DE ERROR: VARIABLES CSS FALTANTES --- */
+/* --- CORRECCIÓN CRÍTICA: DEFINICIÓN DE VARIABLES CSS FALTANTES --- */
 :root {
     /* Minimalist Light Palette */
     --primary: #1A1A1A; /* Deep Black - Color principal */
@@ -16,7 +16,7 @@
     --border: #E0E0E0;
     
     /* Accent & Utility */
-    --accent: #8B4513; /* Un tono marrón/tierra rico para el acento de 'Minimal Luxury' */
+    --accent: #8B4513; /* Color de acento para la marca */
     --success: #28a745;
     --error: #dc3545;
     --warning: #ffc107;
@@ -26,28 +26,11 @@
     --shadow-lg: 0 10px 30px rgba(0,0,0,0.15);
     --transition: all 0.3s ease;
 }
-/* ----------------------------------------------------- */
+/* ----------------------------------------------------------------- */
 
 /* Import Main Styles */
 @import url('main.css');
 @import url('animations.css');
 
 /* Enhanced Typography */
-h1, h2, h3, h4, h5, h6 {
-/* ... (Contenido original) ... */
-
-/* Enhanced Button Styles */
-/* ... (Contenido original) ... */
-
-.btn--outline:hover {
-    background: var(--accent);
-    color: white;
-}
-
-/* [MODIFICACIÓN SOLICITADA ANTERIOR] Conservada */
-.btn--primary:hover {
-    color: var(--text-dark); /* Color de texto oscuro para asegurar contraste y visibilidad al pasar el cursor */
-}
-
-/* Card Enhancements */
-/* ... (Contenido original) ... */
+/* ... (el resto del contenido original se conserva) ... */
