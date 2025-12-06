@@ -317,10 +317,9 @@ class VourneApp {
         this.saveCart();
         this.updateCart();
         
-        // Animation feedback
-        this.animateAddToCart(productId);
+        // MODIFICADO: Redirigir directamente al carrito en lugar de animar
+        window.location.href = 'cart.html';
     }
-
     animateAddToCart(productId) {
         const button = document.querySelector(`[data-id="${productId}"]`);
         if (!button) return;
