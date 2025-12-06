@@ -1,17 +1,3 @@
-/* Modificación del archivo raulrs19/page/Page-2ce62d181cb1e1cb82180e098c385872e84a9f61/assets/css/main.css */
-
-/* Código original:
-a {
-    color: var(--primary);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--accent); 
-}
-*/
-
 /* Reemplaza el bloque de enlaces en assets/css/main.css con esto: */
 
 a {
