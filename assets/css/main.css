@@ -12,13 +12,16 @@ a:hover {
 }
 */
 
-/* Nuevo código para mejorar la visibilidad al hacer hover */
+/* Reemplaza el bloque de enlaces en assets/css/main.css con esto: */
+
 a {
-    color: var(--text-light); /* Color base: Gris Medio (#666666) */
+    color: var(--text-light);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--text-dark); /* MODIFICADO: Usar el color de texto más oscuro (Negro) para asegurar la visibilidad al pasar el cursor */
+    /* Usamos el color de acento (marrón/dorado) para que se vea bien 
+       tanto en fondos blancos como oscuros */
+    color: var(--accent); 
 }
