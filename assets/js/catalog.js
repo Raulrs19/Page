@@ -215,26 +215,46 @@ class CatalogPage {
         });
     }
 
-    addToCart(productId) {
+   addToCart(productId) {
         const product = this.products.find(p => p.id === productId);
         if (!product) return;
 
-        // Use the main app's cart functionality if available
+        // Intentar usar la app principal si existe
         if (window.vourneApp) {
             window.vourneApp.addToCart(productId);
         } else {
-            // Fallback cart functionality
-            this.showNotification('Producto añadido al carrito', 'success');
-            
-            // Update cart count
-            const cartCount = document.querySelector('.cart-count');
-            if (cartCount) {
-                const currentCount = parseInt(cartCount.textContent) || 0;
-                cartCount.textContent = currentCount + 1;
+            // Lógica de respaldo para guardar en el carrito si no está la app principal cargada
+            // Usamos 'vourneo_cart' para ser compatible con cart.js
+            try {
+                const cart = JSON.parse(localStorage.getItem('vourneo_cart')) || [];
+                const existingItem = cart.find(item => item.id === product.id);
+                
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push({
+                        id: product.id,
+                        name: product.name,
+                        price: product.price,
+                        image: product.image,
+                        size: 'Única', // Valor por defecto
+                        color: 'Estándar', // Valor por defecto
+                        quantity: 1,
+                        category: product.category
+                    });
+                }
+                localStorage.setItem('vourneo_cart', JSON.stringify(cart));
+                
+                // MODIFICADO: Redirigir al carrito (subiendo un nivel con ../)
+                window.location.href = '../cart.html';
+                
+            } catch (e) {
+                console.error("Error al guardar en carrito", e);
+                // Fallback de redirección aunque falle el guardado
+                window.location.href = '../cart.html';
             }
         }
     }
-
     viewProductDetails(productId) {
         const product = this.products.find(p => p.id === productId);
         if (product) {
