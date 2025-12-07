@@ -1,13 +1,18 @@
-/* Reemplaza el bloque de enlaces en assets/css/main.css con esto: */
+/* Estilos para enlaces con efecto relieve en hover */
 
 a {
-    color: var(--text-light);
+    color: var(--text-light); /* Gris claro por defecto */
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 a:hover {
-    /* Usamos el color de acento (marrón/dorado) para que se vea bien 
-       tanto en fondos blancos como oscuros */
-    color: var(--accent); 
+    color: #FFFFFF; /* Blanco puro al pasar el mouse */
+    
+    /* EFECTO RELIEVE / RESPLANDOR */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+                 0 0 10px rgba(255, 255, 255, 0.4);
+                 
+    /* Pequeño desplazamiento hacia arriba para efecto 3D */
+    transform: translateY(-2px);
 }
