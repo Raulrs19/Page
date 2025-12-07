@@ -1,19 +1,27 @@
 /* VOURNE - Additional Styles & Overrides */
 
-/* --- VARIABLES GLOBALES (Necesarias para que carguen los colores) --- */
+/* --- VARIABLES GLOBALES (MODO OSCURO) --- */
 :root {
-    --primary: #1A1A1A;       /* Negro principal */
-    --primary-light: #F7F7F7; /* Fondo claro */
-    --text-dark: #1A1A1A;     /* Texto oscuro */
-    --text-light: #666666;    /* Texto gris suave */
-    --background: #FFFFFF;    /* Fondo blanco */
-    --border: #E0E0E0;        /* Bordes */
-    --accent: #8B4513;        /* Marrón (Acento) */
+    /* Colores invertidos para fondo negro */
+    --primary: #FFFFFF;       /* Blanco puro para elementos principales */
+    --primary-light: #111111; /* Fondo secundario (muy oscuro, casi negro) */
+    --text-dark: #FFFFFF;     /* Texto principal en blanco */
+    --text-light: #CCCCCC;    /* Texto secundario en gris claro */
+    --background: #000000;    /* FONDO NEGRO ABSOLUTO */
+    --border: #333333;        /* Bordes en gris oscuro */
+    
+    /* Color de acento (Marrón) se mantiene */
+    --accent: #8B4513;        
+    
+    /* Estados */
     --success: #28a745;
     --error: #dc3545;
     --warning: #ffc107;
-    --shadow: 0 4px 10px rgba(0,0,0,0.05);
-    --shadow-lg: 0 10px 30px rgba(0,0,0,0.15);
+    
+    /* Sombras adaptadas a fondo oscuro (resplandor blanco sutil) */
+    --shadow: 0 4px 10px rgba(255,255,255,0.05);
+    --shadow-lg: 0 10px 30px rgba(255,255,255,0.1);
+    
     --transition: all 0.3s ease;
 }
 
@@ -48,12 +56,12 @@ p {
 }
 
 .btn--primary:hover {
-    color: var(--text-dark) !important; /* CORRECCIÓN: Letras visibles al pasar el cursor */
+    /* Al pasar el mouse por un botón primario, el texto se vuelve oscuro para contrastar */
+    color: #000000 !important; 
 }
 
-/* ... (resto de estilos de componentes) ... */
 .form-control:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+    box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.2);
 }
